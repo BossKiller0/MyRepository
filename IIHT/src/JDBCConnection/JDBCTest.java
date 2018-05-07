@@ -24,7 +24,7 @@ public class JDBCTest {
 						"CREATE TABLE IF NOT EXISTS Student (Id INT(11) NOT NULL AUTO_INCREMENT,Name VARCHAR(45) DEFAULT NULL,Address VARCHAR(200) DEFAULT NULL,PRIMARY KEY (ID))");
 				System.out.println("Student Table Created");
 
-				System.out.println("1. Inserti");
+				System.out.println("1. Insert");
 				System.out.println("2. Delete");
 				System.out.println("3. Modify");
 				System.out.println("4. Display");
