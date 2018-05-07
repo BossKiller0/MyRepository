@@ -68,7 +68,7 @@ public class JDBCTest {
 					ResultSet b = std.executeQuery("select * from student where id =" + id);
 					if (b.next()) {
 						System.out.println("Records Found");
-						System.out.println("Do You Want To Proceed With The Deletion? (Y/N));
+						System.out.println("Do You Want To Proceed With The Deletion? (Y/N)");
 						ms = sc.nextLine();
 						if (ms.equals("Y") || ms.equals("y")) {
 							std.executeUpdate("delete from student where id =" + id);
