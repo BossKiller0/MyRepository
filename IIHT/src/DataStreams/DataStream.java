@@ -25,6 +25,7 @@ public class DataStream {
 			System.out.println("7. Count No of Files And Directory");
 			System.out.println("8. Read from File");
 			System.out.println("9. Write in to File");
+			System.out.println("10. Exit");
 			int choice = Integer.parseInt(sc.nextLine());
 			FileReader fin = new FileReader("D:\\testout.txt");
 			BufferedReader reader = new BufferedReader(fin);
@@ -138,6 +139,11 @@ public class DataStream {
 				String input = tx.nextLine();
 				outputStream.println(input);
 				outputStream.close();
+				break;
+
+			case 10:
+				sc.close();
+				System.exit(0);
 				break;
 
 			default:
