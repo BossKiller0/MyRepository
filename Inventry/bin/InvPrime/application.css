@@ -1,0 +1,56 @@
+#Close:hover {
+	-fx-text-fill: white;
+	-fx-background-color: red;
+}
+
+#Close:pressed {
+	-fx-background-color: #c60000;
+}
+
+#pan {
+	-fx-background-insets: 15;
+	-fx-effect: dropshadow(three-pass-box, green, 10, 0, 0, 0);
+}
+
+#pan1 {
+	-fx-background-insets: 10;
+	-fx-effect: dropshadow(three-pass-box, green, 10, 0, 0, 0);
+}
+
+.autofill-text {
+	-fx-skin: "np.com.ngopal.control.AutoFillTextBoxSkin";
+}
+
+.text-field {
+	-fx-border-radius:0;
+}
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, white ;
+    -fx-background-insets: 0, 0 0 0 0 ;
+    -fx-background-radius: 0 ;
+    -fx-border-color: Black;
+}
+/* .text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+} */
+
+/* .text-field {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+} */
+.text-field:focused {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-border-color: #00feff;
+}
+
+.combo-box{
+	-fx-background-color: -fx-text-box-border, white ;
+    -fx-background-insets: 0, 0 0 0 0 ;
+    -fx-background-radius: 0 ;
+    -fx-border-color: Black;
+}
+
+.combo-box:focused{
+	 -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-border-color: #00feff;
+}
