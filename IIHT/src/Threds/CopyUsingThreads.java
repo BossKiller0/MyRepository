@@ -4,6 +4,7 @@ import java.io.File;
 
 public class CopyUsingThreads {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		System.out.println("Copy Files");
