@@ -15,10 +15,10 @@ public class TestBank {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		Random rand = new Random();
-		String s1 = new String("HELLO");
-        String s2 = new String("HELLO");
-        System.out.println(s1 == s2);
-        System.out.println(s1.equals(s2));
+//		String s1 = new String("HELLO");
+//        String s2 = new String("HELLO");
+//        System.out.println(s1 == s2);
+//        System.out.println(s1.equals(s2));
 		// Bank Customer[];
 		// for (int i = 0; i < Customer.length; i++)
 		// Customer[i] = new Bank();
