@@ -51,6 +51,7 @@ public class JDBCTest {
 					ms = sc.nextLine();
 					if (ms.equals("Y") || ms.equals("y")) {
 						con.commit();
+						System.out.println("Save Sucessfull.");
 					} else if (ms.equals("N") || ms.equals("n")) {
 						System.out.println("Canceled");
 						con.rollback();
@@ -73,6 +74,7 @@ public class JDBCTest {
 						if (ms.equals("Y") || ms.equals("y")) {
 							std.executeUpdate("delete from student where id =" + id);
 							con.commit();
+							System.out.println("Delete Sucessfull.");
 							System.out.println("Record with ID " + id + " Deleted Sucessfully. ");
 						} else if (ms.equals("N") || ms.equals("n")) {
 							System.out.println("Canceled");
@@ -111,6 +113,7 @@ public class JDBCTest {
 					ms = sc.nextLine();
 					if (ms.equals("Y") || ms.equals("y")) {
 						con.commit();
+						System.out.println("Save Sucessfull.");
 					} else if (ms.equals("N") || ms.equals("n")) {
 						System.out.println("Canceled");
 						con.rollback();
@@ -137,6 +140,8 @@ public class JDBCTest {
 				case 5:
 					System.out.println("Exiting . . . . ");
 					System.exit(0);
+					break;
+
 				default:
 					System.out.println("Error Invalid Chioce");
 					break;
