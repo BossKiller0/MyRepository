@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>This is My HTML</title>
+<style>
+.button {
+	font-size: 24px;
+	color: #fff;
+	background-color: #4CAF50;
+	border-radius: 15px;
+}
+
+.button:hover {
+	background-color: #3e8e41
+}
+
+.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+</style>
+<script type="text/javascript">
+	function btclick() {
+		alert("You Clicked Button");
+
+	}
+</script>
+</head>
+<body>
+	First name:
+	<input type="text" name="fname">
+	<br> Last name:
+	<input type="text" name="lname">
+	<br> Select Vehicle :
+	<select>
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="opel">Opel</option>
+		<option value="audi">Audi</option>
+	</select>
+	<br> Extra Features
+	<br>
+	<select multiple>
+		<option value="volvo">Music System</option>
+		<option value="saab">Spoilers</option>
+		<option value="opel">Rim</option>
+		<option value="audi">Nos</option>
+	</select>
+	<br>
+	<button class="button" onclick="btclick()">OK</button>
+</body>
+</html>
