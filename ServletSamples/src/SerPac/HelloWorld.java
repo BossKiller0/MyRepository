@@ -30,7 +30,61 @@ public class HelloWorld extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 response.setContentType("text/html");
 	        PrintWriter printWriter  = response.getWriter();
-	        printWriter.println("<h1>Hello World!</h1>");
+	        printWriter.println("<!DOCTYPE html>\r\n" + 
+	        		"<html>\r\n" + 
+	        		"<head>\r\n" + 
+	        		"<meta charset=\"ISO-8859-1\">\r\n" + 
+	        		"<title>This is My HTML</title>\r\n" + 
+	        		"<style>\r\n" + 
+	        		".button {\r\n" + 
+	        		"	font-size: 24px;\r\n" + 
+	        		"	color: #fff;\r\n" + 
+	        		"	background-color: #4CAF50;\r\n" + 
+	        		"	border-radius: 15px;\r\n" + 
+	        		"}\r\n" + 
+	        		"\r\n" + 
+	        		".button:hover {\r\n" + 
+	        		"	background-color: #3e8e41\r\n" + 
+	        		"}\r\n" + 
+	        		"\r\n" + 
+	        		".button:active {\r\n" + 
+	        		"	background-color: #3e8e41;\r\n" + 
+	        		"	box-shadow: 0 5px #666;\r\n" + 
+	        		"	transform: translateY(4px);\r\n" + 
+	        		"}\r\n" + 
+	        		"</style>\r\n" + 
+	        		"<script type=\"text/javascript\">\r\n" + 
+	        		"	function btclick() {\r\n" + 
+	        		"		alert(\"You Clicked Button\");\r\n" + 
+	        		"\r\n" + 
+	        		"	}\r\n" + 
+	        		"</script>\r\n" + 
+	        		"</head>\r\n" + 
+	        		"<body>\r\n" + 
+	        		"	First name:\r\n" + 
+	        		"	<input type=\"text\" name=\"fname\">\r\n" + 
+	        		"	<br> Last name:\r\n" + 
+	        		"	<input type=\"text\" name=\"lname\">\r\n" + 
+	        		"	<br> Select Vehicle :\r\n" + 
+	        		"	<select>\r\n" + 
+	        		"		<option value=\"volvo\">Volvo</option>\r\n" + 
+	        		"		<option value=\"saab\">Saab</option>\r\n" + 
+	        		"		<option value=\"opel\">Opel</option>\r\n" + 
+	        		"		<option value=\"audi\">Audi</option>\r\n" + 
+	        		"	</select>\r\n" + 
+	        		"	<br> Extra Features\r\n" + 
+	        		"	<br>\r\n" + 
+	        		"	<select multiple>\r\n" + 
+	        		"		<option value=\"volvo\">Music System</option>\r\n" + 
+	        		"		<option value=\"saab\">Spoilers</option>\r\n" + 
+	        		"		<option value=\"opel\">Rim</option>\r\n" + 
+	        		"		<option value=\"audi\">Nos</option>\r\n" + 
+	        		"	</select>\r\n" + 
+	        		"	<br>\r\n" + 
+	        		"	<button class=\"button\" onclick=\"btclick()\">OK</button>\r\n" + 
+	        		"</body>\r\n" + 
+	        		"</html>");
+	        
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
